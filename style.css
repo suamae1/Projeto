@@ -22,12 +22,14 @@ padding: 0;
 }
 body{
   /*background image repeat position/size*/
-  background: var(--bg-url) no-repeat top center/cover
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family:'Inter',sans-serif;
   color: var(--text-color);
 }
+
 #container {
     width: 100%;
     max-width: 588px;
@@ -128,4 +130,12 @@ footer{
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .Light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
