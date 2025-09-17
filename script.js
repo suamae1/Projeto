@@ -6,6 +6,7 @@ if(html.classList.contains('Light')){
 img.setAttribute('src', './assets/avatar-light.png')
 }
 else{
+    //setattribute muda um conteudo
     img.setAttribute('src', './assets/avatar.png')
 }
  //if(html.classList.contains('Light')){
